@@ -21,8 +21,8 @@ spec:
               command: ["/bin/sh", "-c", "echo 'Gracefully terminating...' && sleep 30"]
         resources:
           requests:
-            cpu: "1"
+            cpu: "800m"
             memory: "2000Mi"
           limits:
-            cpu: "2"
+            cpu: "1000m"
             memory: "2000Mi"
