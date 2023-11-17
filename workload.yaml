@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: images.my-company.example/app:v4
+    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
     resources:
       requests:
         memory: "64Mi"
@@ -22,7 +22,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: images.my-company.example/app:v4
+    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
     resources:
       requests:
         memory: "64Mi"
@@ -38,7 +38,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: images.my-company.example/app:v4
+    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
     resources:
       requests:
         memory: "64Mi"
