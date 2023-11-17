@@ -5,15 +5,16 @@ metadata:
   name: frontend1
 spec:
   containers:
-  - name: app
-    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "500m"
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
+    - name: app
+      image: mcr.microsoft.com/oss/kubernetes/pause:3.6
+      resources:
+        requests:
+          memory: 64Mi
+          cpu: 500m
+        limits:
+          memory: 128Mi
+          cpu: 500m
+
 ---
 apiVersion: v1
 kind: Pod
@@ -21,15 +22,16 @@ metadata:
   name: frontend2
 spec:
   containers:
-  - name: app
-    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "500m"
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
+    - name: app
+      image: mcr.microsoft.com/oss/kubernetes/pause:3.6
+      resources:
+        requests:
+          memory: 64Mi
+          cpu: 500m
+        limits:
+          memory: 128Mi
+          cpu: 500m
+
 ---
 apiVersion: v1
 kind: Pod
@@ -37,12 +39,12 @@ metadata:
   name: frontend3
 spec:
   containers:
-  - name: app
-    image: mcr.microsoft.com/oss/kubernetes/pause:3.6
-    resources:
-      requests:
-        memory: "64Mi"
-        cpu: "500m"
-      limits:
-        memory: "128Mi"
-        cpu: "500m"
+    - name: app
+      image: mcr.microsoft.com/oss/kubernetes/pause:3.6
+      resources:
+        requests:
+          memory: 64Mi
+          cpu: 500m
+        limits:
+          memory: 128Mi
+          cpu: 500m
